@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Semántico y Formularios</title>
 </head>
 <body>
-   <header>
+    <header>
         <h1>Header de la página</h1>
     </header>
+
+    <img src="C:\DevPruebas\demon.jpg" alt="imagen demon ">
     
     <nav>
         <h2>NAV</h2>
@@ -17,24 +19,24 @@
     <main>
         <article>
             <h2>Artículo 1</h2>
-            <p>Contenido del primer artículo. Este es un ejemplo de cómo se estructuraría el contenido semántico en HTML5.</p>
+            <p>Contenido del primer artículo.</p>
         </article>
         
         <article>
             <h2>Artículo 2</h2>
-            <p>Contenido del segundo artículo. Los elementos semánticos ayudan a los motores de búsqueda y tecnologías de asistencia a comprender la estructura de la página.</p>
+            <p>Contenido del segundo artículo.</p>
         </article>
         
         <article>
             <h2>Artículo 3</h2>
-            <p>Contenido del tercer artículo. El uso correcto de etiquetas semánticas mejora la accesibilidad y el SEO de un sitio web.</p>
+            <p>Contenido del tercer artículo.</p>
         </article>
     </main>
     
-    <section >
+    <section>
         <h2>Divs y Spans</h2>
         
-        <div >
+        <div>
             <p>Todo este contenido va a estar dentro de este div</p>
         </div>
         
@@ -42,15 +44,15 @@
             <p>Este contenido de div estará en una nueva línea</p>
         </div>
         
-        <p>Todo este contenido esta sobre una misma línea <span >Y este también...</span></p>
+        <p>Todo este contenido esta sobre una misma línea <span>Y este también...</span></p>
         
-        <p>El lenguaje de <span >HTML</span> es muy útil para la creación de <span >sitios web</span></p>
+        <p>El lenguaje de <span>HTML</span> es muy útil para la creación de <span>sitios web</span></p>
     </section>
     
-    <section >
+    <section>
         <h2>Formularios</h2>
         
-        <table>
+        <table border="1">
             <thead>
                 <tr>
                     <th>Tipo de campo</th>
@@ -73,53 +75,49 @@
             </tbody>
         </table>
         
-        <div >
+        <div>
             <label for="number">Campo para números</label>
-            <input type="number" id="number" min="0" max="100">
+            <input type="number" id="number">
         </div>
         
-        <div >
+        <div style="display: flex;">
             <label>Campo tipo Radio</label>
-            <div >
-                <div >
-                    <input type="radio" id="radio-a" name="radio-group">
-                    <label for="radio-a">A</label>
-                </div>
-                <div >
-                    <input type="radio" id="radio-b" name="radio-group">
-                    <label for="radio-b">B</label>
-                </div>
-                <div >
-                    <input type="radio" id="radio-c" name="radio-group">
-                    <label for="radio-c">C</label>
-                </div>
+            <div>
+                <input type="radio" id="radio-a" name="radio-group">
+                <label for="radio-a">A</label>
+            </div>
+            <div>
+                <input type="radio" id="radio-b" name="radio-group">
+                <label for="radio-b">B</label>
+            </div>
+            <div>
+                <input type="radio" id="radio-c" name="radio-group">
+                <label for="radio-c">C</label>
             </div>
         </div>
         
-        <div >
+        <div style="display: flex;">
             <label>Campo tipo Checkbox</label>
             <div>
-                <div >
-                    <input type="checkbox" id="checkbox-a">
-                    <label for="checkbox-a">A</label>
-                </div>
-                <div >
-                    <input type="checkbox" id="checkbox-b">
-                    <label for="checkbox-b">B</label>
-                </div>
-                <div >
-                    <input type="checkbox" id="checkbox-c">
-                    <label for="checkbox-c">C</label>
-                </div>
+                <input type="checkbox" id="checkbox-a">
+                <label for="checkbox-a">A</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox-b">
+                <label for="checkbox-b">B</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox-c">
+                <label for="checkbox-c">C</label>
             </div>
         </div>
         
-        <div >
+        <div>
             <label for="file">Campo para archivos</label>
-            <input type="file" id="file" >
+            <input type="file" id="file">
         </div>
         
-        <button type="submit" >Enviar</button>
+        <button type="submit">Enviar</button>
     </section>
     
     <footer>

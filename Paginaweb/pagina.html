@@ -6,13 +6,124 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        mi pagina web
-    </h1>
-    <p>
-        Esta es mi primera pagina web
-    </p>
-    <a href="https://www.ejemplo.com">Visita Ejemplo.com</a>
+   <header>
+        <h1>Header de la página</h1>
+    </header>
     
+    <nav>
+        <h2>NAV</h2>
+    </nav>
+    
+    <main>
+        <article>
+            <h2>Artículo 1</h2>
+            <p>Contenido del primer artículo. Este es un ejemplo de cómo se estructuraría el contenido semántico en HTML5.</p>
+        </article>
+        
+        <article>
+            <h2>Artículo 2</h2>
+            <p>Contenido del segundo artículo. Los elementos semánticos ayudan a los motores de búsqueda y tecnologías de asistencia a comprender la estructura de la página.</p>
+        </article>
+        
+        <article>
+            <h2>Artículo 3</h2>
+            <p>Contenido del tercer artículo. El uso correcto de etiquetas semánticas mejora la accesibilidad y el SEO de un sitio web.</p>
+        </article>
+    </main>
+    
+    <section >
+        <h2>Divs y Spans</h2>
+        
+        <div >
+            <p>Todo este contenido va a estar dentro de este div</p>
+        </div>
+        
+        <div>
+            <p>Este contenido de div estará en una nueva línea</p>
+        </div>
+        
+        <p>Todo este contenido esta sobre una misma línea <span >Y este también...</span></p>
+        
+        <p>El lenguaje de <span >HTML</span> es muy útil para la creación de <span >sitios web</span></p>
+    </section>
+    
+    <section >
+        <h2>Formularios</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de campo</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Entrada de texto simple</td>
+                    <td>Cualquier cosa</td>
+                </tr>
+                <tr>
+                    <td>Campo para contraseñas</td>
+                    <td>••••••</td>
+                </tr>
+                <tr>
+                    <td>Campo para email</td>
+                    <td>holamundo</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div >
+            <label for="number">Campo para números</label>
+            <input type="number" id="number" min="0" max="100">
+        </div>
+        
+        <div >
+            <label>Campo tipo Radio</label>
+            <div >
+                <div >
+                    <input type="radio" id="radio-a" name="radio-group">
+                    <label for="radio-a">A</label>
+                </div>
+                <div >
+                    <input type="radio" id="radio-b" name="radio-group">
+                    <label for="radio-b">B</label>
+                </div>
+                <div >
+                    <input type="radio" id="radio-c" name="radio-group">
+                    <label for="radio-c">C</label>
+                </div>
+            </div>
+        </div>
+        
+        <div >
+            <label>Campo tipo Checkbox</label>
+            <div>
+                <div >
+                    <input type="checkbox" id="checkbox-a">
+                    <label for="checkbox-a">A</label>
+                </div>
+                <div >
+                    <input type="checkbox" id="checkbox-b">
+                    <label for="checkbox-b">B</label>
+                </div>
+                <div >
+                    <input type="checkbox" id="checkbox-c">
+                    <label for="checkbox-c">C</label>
+                </div>
+            </div>
+        </div>
+        
+        <div >
+            <label for="file">Campo para archivos</label>
+            <input type="file" id="file" >
+        </div>
+        
+        <button type="submit" >Enviar</button>
+    </section>
+    
+    <footer>
+        <p>Footer de la página</p>
+    </footer>
 </body>
 </html>

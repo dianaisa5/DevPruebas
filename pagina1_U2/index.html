@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline vs Inline-Block</title>
+    <link rel="stylesheet" href="modelo.css">
+</head>
+<body>
+
+   <h2>Selector con class</h2>
+
+    <div class="verde">Este texto debe ser color verde</div>
+    <div class="naranja">Este texto debe ser color naranja</div>
+    <section class="naranja">Este texto también debe ser color naranja</section>
+
+
+    <h2>Selector con id</h2>
+
+    <div id="verde">Este texto debe ser color verde</div>
+    <div id="naranja">Este texto debe ser color naranja</div>
+    <div id="naranja">Este texto NO debería ser color naranja</div>
+
+    <p>Class se puede usar para varios elementos. Id sólo DEBE usarse para uno.</p>
+
+    <h2>Selectores específicos</h2>
+
+    <div class="azul">Este texto debe ser color azul</div>
+    <section class="azul">Este texto NO debería ser color azul</section>
+    <div>Este texto TAMPOCO debería ser azul</div>
+
+    <h2>Display</h2>
+
+    <p>Ejemplos de block vs inline</p>
+
+    <div class="box">
+        <div class="block">block</div>
+        <div class="block">block</div>
+
+        <div class="inline">inline</div>
+        <div class="inline">inline</div>
+
+        <div class="block">block</div>
+        <p>padding margin width</p>
+    </div>
+
+    <p>Ejemplos de inline solamente</p>
+
+    <div class="box">
+        <div class="inline">inline</div>
+        <div class="inline">inline</div>
+        <div class="inline">inline</div>
+        <div class="inline">inline</div>
+        <div class="inline">inline</div>
+
+       <p>padding margin width</p>
+    </div>
+
+    <p>Ejemplos de inline-block</p>
+
+    <div class="box">
+        <div class="block">block</div>
+
+        <div class="inline-block">inline-block</div>
+        <div class="inline-block">inline-block</div>
+
+        <div class="inline">inline</div>
+        <div class="inline">inline</div>
+        <div class="inline-block">inline-block</div>
+
+        <div class="block">block</div>
+    </div>
+</body>
+</html>
